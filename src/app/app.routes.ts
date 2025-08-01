@@ -24,4 +24,11 @@ export const routes: Routes = [
             return mod.AboutComponent;
         }
     },
+    {
+        path: 'faq',
+        loadComponent: async () => {
+            const mod = await import('./pages/faq/faq.component');
+            return mod.FaqComponent;
+        }
+    },
 ];

@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-student-area',
   imports: [],
   templateUrl: './student-area.component.html',
-  styleUrl: './student-area.component.css'
+  styleUrl: './student-area.component.scss'
 })
 export class StudentAreaComponent {
 
