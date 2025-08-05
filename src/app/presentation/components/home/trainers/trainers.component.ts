@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { TrainerCardComponent } from "./trainer-card/trainer-card.component";
 
 @Component({
   selector: 'app-trainers',
-  imports: [],
+  imports: [TrainerCardComponent],
   templateUrl: './trainers.component.html',
   styleUrl: './trainers.component.scss'
 })
