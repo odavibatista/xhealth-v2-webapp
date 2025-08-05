@@ -1,0 +1,45 @@
+@use "sass:color";
+@import "styles.scss";
+
+.trainer_card   {
+    align-items: center;
+    border: 1px solid $rusty;
+    box-shadow: 5px 5px 500px color.adjust($rusty, $alpha: 0.1);
+    justify-content: center;
+    background-color: $dark;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    padding: 20px 3px;
+    height: 448px;
+    width: 279px;
+}
+
+.trainer_name   {
+    color: $light;
+    font-family: $i;
+    font-size: 22px;
+    font-weight: 100;
+}
+
+.trainer_image  {
+    border-radius: 20px;
+    height: 297px;
+    width: 238px;
+}
+
+.trainer_socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social_icon {
+    transition: 0.2s;
+    &:hover {
+        filter: brightness(0.3);
+    }
+}

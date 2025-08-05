@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-trainer-card',
@@ -7,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrl: './trainer-card.component.scss'
 })
 export class TrainerCardComponent {
-
+  @Input() trainer = {
+    id_trainer: '',
+    imgUrl: '',
+    name: '',
+    instagramUrl: '',
+    twitterUrl: '',
+    youtubeUrl: '',
+  }
 }

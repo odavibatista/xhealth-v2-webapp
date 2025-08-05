@@ -1,1 +1,6 @@
-<p>trainers works!</p>
+<section class="trainers">
+    <h1 class="trainers_title">Treinadores Profissionais</h1>
+    <div class="trainers_container">
+        <app-trainer-card *ngFor="let trainer of trainers" [trainer]="trainer"></app-trainer-card>
+    </div>
+</section>
