@@ -1,34 +1,47 @@
 import { Routes } from '@angular/router';
+import { HomeComponent } from './pages/home/home.component';
+import { AboutComponent } from './pages/about/about.component';
+import { FaqComponent } from './pages/faq/faq.component';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { StudentAreaComponent } from './pages/student-area/student-area.component';
+import { MyPlanComponent } from './pages/my-plan/my-plan.component';
+import { SignInComponent } from './pages/sign-in/sign-in.component';
 
 export const routes: Routes = [
     {
         path: '',
-        pathMatch: 'full',
-        loadComponent: async () => {
-            const mod = await import('./pages/home/home.component');
-            return mod.HomeComponent;
-        },
+        component: HomeComponent,
+        title: 'XHealth - Home'
 
     },
     {
-        path: 'student-area',
-        loadComponent: async () => {
-            const mod = await import('./pages/student-area/student-area.component');
-            return mod.StudentAreaComponent;
-        }
-    },
-    {
         path: 'about',
-        loadComponent: async () => {
-            const mod = await import('./pages/about/about.component');
-            return mod.AboutComponent;
-        }
+        component: AboutComponent,
+        title: 'XHealth - Sobre Nós'
     },
     {
         path: 'faq',
-        loadComponent: async () => {
-            const mod = await import('./pages/faq/faq.component');
-            return mod.FaqComponent;
-        }
+        component: FaqComponent,
+        title: 'XHealth - Perguntas Frequentes'
     },
+    {
+        path: 'dashboard',
+        component: DashboardComponent,
+        title: 'XHealth - Dashboard'
+    },
+    {
+        path: 'student-area',
+        component: StudentAreaComponent,
+        title: 'XHealth - Área do Aluno'
+    },
+    {
+        path: 'my-plan',
+        component: MyPlanComponent,
+        title: 'XHealth - Meu Plano'
+    },
+    {
+        path: 'sign-in',
+        component: SignInComponent,
+        title: 'XHealth - Entrar'
+    }
 ];

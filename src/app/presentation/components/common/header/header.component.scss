@@ -1,0 +1,59 @@
+@import 'styles.scss';
+
+.header {
+    align-items: center;
+    background: $dark;
+    background: linear-gradient(to bottom, $dark, $tr 90%);
+    display: flex;
+    justify-content: space-between;
+    left: 0;
+    height: 121px;
+    padding: 30px 112px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100vw;
+    z-index: 1000;
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.header_title   {
+    color: $goldie;
+    cursor: pointer;
+    font-family: $br;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.emphasis   {
+    font-size: 48px;
+    font-weight: 500;
+}
+
+.header_links   {
+    color: $gr;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    list-style-type: none;
+    font-family: $br;
+}
+
+.header_link {
+    font-size: 16px;
+    
+    a {
+        color: $gr;
+        text-decoration: none;
+        transition: 0.3s;
+
+            &:hover {
+        color: $goldie;
+    }
+    }
+}
