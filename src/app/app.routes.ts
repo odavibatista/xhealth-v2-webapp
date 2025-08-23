@@ -2,7 +2,6 @@ import { Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
 import { AboutComponent } from './pages/about/about.component';
 import { FaqComponent } from './pages/faq/faq.component';
-import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { StudentAreaComponent } from './pages/student-area/student-area.component';
 import { MyPlanComponent } from './pages/my-plan/my-plan.component';
 import { SignInComponent } from './pages/sign-in/sign-in.component';
@@ -23,11 +22,6 @@ export const routes: Routes = [
         path: 'faq',
         component: FaqComponent,
         title: 'XHealth - Perguntas Frequentes'
-    },
-    {
-        path: 'dashboard',
-        component: DashboardComponent,
-        title: 'XHealth - Dashboard'
     },
     {
         path: 'student-area',
